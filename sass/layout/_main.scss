@@ -47,6 +47,13 @@
     }
 
 
+    &__special-offers{
+        @include responsive (phone){
+            text-align: center;
+        }
+        width: 100%;
+        max-width:111rem;
+    }
     &__special-offers-text{
             color: black;
             font-weight: 700;
