@@ -1,0 +1,143 @@
+.header{
+    &__nav{
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        background-color: $gray-background;
+    }
+    &__list{
+        padding: 1.7rem 0rem;
+        list-style: none;
+        margin-left: 3rem;
+        color: $black-color;
+    }
+    &__item{
+        transition: 0.3s ease;
+        cursor: pointer;
+        font-size: 1.4rem;
+        font-weight: 400;
+        line-height: 1.35;
+        
+    }
+    &__item:hover{
+        color: $brand-color ;
+    }
+    @include responsive (phone){
+        &__nav{
+            display: none;
+        }
+    }
+    &__intro{
+        @include responsive(phone){
+            text-align: center;
+            display: block;
+        }
+        padding: 2rem;
+        justify-content: center;
+        align-items: center;
+        display: flex;
+        h2{
+            @include responsive(phone){
+                display: none;
+            }
+            cursor: pointer;
+            margin-left: 9rem;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 1.12;
+        }
+        a{
+            text-decoration: none;
+            list-style-type: none;
+            color: $black-color;
+            font-weight: 400;
+            font-size: 1.6rem;
+            line-height: 1.12;
+            border: 2px solid $brand-color;
+            border-radius: 4rem;
+            margin-left: 3rem;
+            padding: 1.3rem 2.7rem;
+        }
+        a:hover{
+            color: $brand-color;
+            
+        }
+        a:active{
+            opacity: 0.5px;
+        }
+    }
+    &__logo{
+        @include responsive (phone){
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+            img:not(:first-child){
+                margin-bottom: 2.5rem;
+
+            }
+        }
+        margin-right: 15.5rem;
+        display: flex;
+        align-items: center;
+
+    }
+    &__form{
+        input{
+            @include responsive (phone){
+                margin-left: 2.5rem;
+                margin-bottom: 3rem;
+            }
+            outline: none;
+            border: none;
+            border-radius: 4rem;
+            padding-top: 1rem;
+            padding-bottom: 1rem;
+            margin-top: 5px;
+            padding-right: 5rem;
+            background-repeat: no-repeat;
+            background: url(../images/input-img.svg) no-repeat center left #EFEFEF ;
+            background-position: 1rem;
+            padding-left: 3rem;
+            box-sizing: border-box;
+        }
+    }
+    hr{
+        background-color:#EFEFEF ;
+        display: block;
+        max-width: 1920px;
+        border: 1px solid #EFEFEF;
+    }
+    &__bottom-list{
+        
+        padding-top: 3rem;
+        justify-content: center;
+        align-items: center;
+        list-style-type: none;
+        display: flex;
+    }
+    &__bottom-item:not(:last-child){
+        margin-right: 3rem;
+        
+    }
+    &__bottom-item{
+        @include responsive (phone){
+            display: none;
+        }
+        transition: 0.5s ease;
+        cursor: pointer;
+        font-weight: 400;
+        font-size: 1.6rem;
+        line-height: 1.12rem;
+        margin-bottom: 3rem;
+    }
+    &__bottom-item:hover{
+        color: $brand-color;
+    }
+    &__burger-img{
+        @include responsive (phone){
+            margin-top: 1rem;
+            display: block;
+        }
+        display: none;
+    }
+}
