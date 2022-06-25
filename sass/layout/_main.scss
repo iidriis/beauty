@@ -133,6 +133,9 @@
         display: flex;
     }
     &__services-list:not(last-child){
+        @include responsive (phone){
+            margin: 0;
+        }
         margin-right: 3.5rem;
     }
     &__services-item{
