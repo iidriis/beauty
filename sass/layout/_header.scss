@@ -123,6 +123,7 @@
     }
     &__bottom-item{
         @include responsive (phone){
+            margin: 0rem;
             display: none;
         }
         transition: 0.5s ease;
@@ -137,6 +138,8 @@
     }
     &__burger-img{
         @include responsive (phone){
+            margin-bottom: -2.5rem;
+            
             margin-top: 1rem;
             display: block;
         }
