@@ -2,6 +2,7 @@
     background-color: $gray-background;
     &__start{
         @include responsive (phone){
+            width: 100%;
             
         }
         background-image: url(../images/main-background-img.png);
@@ -51,10 +52,13 @@
         @include responsive (phone){
             text-align: center;
         }
-        width: 100%;
-        max-width:111rem;
     }
     &__special-offers-text{
+        @include responsive (phone){
+            width: 100%;
+            margin-left: auto;
+            margin-right: auto;
+        }
             color: black;
             font-weight: 700;
             font-size: 2.4rem;
@@ -64,13 +68,17 @@
             margin-left: 14.5rem;
     }
     &__sale{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         @include responsive (phone){
             display: block;
         }
-        display: flex;
-        justify-content: center;
     }
     &__sale-list{
+        @include responsive (phone){
+            width: 100%;
+        }
         text-align: center;
         background-color: white;
         padding: 2rem 3rem ;
