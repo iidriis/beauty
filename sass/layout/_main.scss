@@ -109,10 +109,11 @@
     &__sale-list:not(:last-child){
         margin-right: 3rem;
     }
-
-
-
+    
+    
+    
     &__services{
+        
         margin-top: 10rem;
         justify-content: center;
         display: flex;
@@ -122,6 +123,7 @@
     }
     &__services-list{
         @include responsive (phone){
+            width: 100%;
             display: block;
         }
         margin-bottom: 5rem;
